@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VoiceDialerSDKTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-nav" translatesAutoresizingMaskIntoConstraints="NO" id="a2w-vO-Iew">
+                                <rect key="frame" x="0.0" y="44" width="375" height="61.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a2w-vO-Iew" secondAttribute="height" multiplier="207:34" id="9K7-P8-AYe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-top" translatesAutoresizingMaskIntoConstraints="NO" id="j1n-kc-LI6">
+                                <rect key="frame" x="-4.3333333333333428" y="110" width="383.66666666666674" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j1n-kc-LI6" secondAttribute="height" multiplier="414:137" id="hBz-J2-ldH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-item" translatesAutoresizingMaskIntoConstraints="NO" id="x0D-Jx-WIZ">
+                                <rect key="frame" x="0.0" y="249" width="375" height="169.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x0D-Jx-WIZ" secondAttribute="height" multiplier="414:187" id="0wp-vv-cl7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-bottom" translatesAutoresizingMaskIntoConstraints="NO" id="uev-Ky-lPa">
+                                <rect key="frame" x="0.0" y="426" width="375" height="330.66666666666674"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uev-Ky-lPa" secondAttribute="height" multiplier="414:365" id="jET-xb-S2r"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxJ-bC-Y0Y">
+                                <rect key="frame" x="152.66666666666666" y="569" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="FkK-iS-XKo"/>
+                                    <constraint firstAttribute="height" constant="70" id="ZJC-gx-Q1E"/>
+                                    <constraint firstAttribute="width" secondItem="GxJ-bC-Y0Y" secondAttribute="height" multiplier="1:1" id="mRy-6z-Wjl"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="placeCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kl8-Vk-weM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GxJ-bC-Y0Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2fA-6h-ux1"/>
+                            <constraint firstItem="a2w-vO-Iew" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6fG-vX-72V"/>
+                            <constraint firstItem="uev-Ky-lPa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="90F-Li-0OL"/>
+                            <constraint firstItem="j1n-kc-LI6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JSi-nk-dAE"/>
+                            <constraint firstItem="a2w-vO-Iew" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UWM-lm-PSe"/>
+                            <constraint firstItem="x0D-Jx-WIZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WgW-dX-Y3r"/>
+                            <constraint firstItem="GxJ-bC-Y0Y" firstAttribute="top" secondItem="uev-Ky-lPa" secondAttribute="bottom" constant="-187.5" id="cKf-p5-qrH"/>
+                            <constraint firstItem="j1n-kc-LI6" firstAttribute="top" secondItem="a2w-vO-Iew" secondAttribute="bottom" constant="4.5" id="faj-cC-30z"/>
+                            <constraint firstItem="x0D-Jx-WIZ" firstAttribute="top" secondItem="j1n-kc-LI6" secondAttribute="bottom" constant="12" id="k2V-Ay-G7y"/>
+                            <constraint firstItem="uev-Ky-lPa" firstAttribute="top" secondItem="x0D-Jx-WIZ" secondAttribute="bottom" constant="7.5" id="m8V-ev-dyJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app-bottom" width="375" height="313"/>
+        <image name="app-item" width="375" height="169"/>
+        <image name="app-nav" width="375" height="58"/>
+        <image name="app-top" width="375" height="127"/>
+    </resources>
+</document>
