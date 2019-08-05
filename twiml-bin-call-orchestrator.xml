@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <Dial callerId="+14157993198">
+  <Dial callerId="+14157993198" answerOnBridge="true">
     <Client>
       <Identity>agentbob</Identity>
       <Parameter name="name" value="{{name}}"/>
