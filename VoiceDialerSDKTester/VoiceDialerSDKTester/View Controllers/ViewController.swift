@@ -23,9 +23,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func placeCall(_ sender: Any) {
+        
+        // Set up your Twilio Function using twilio-function-access-token.js
+        // and invoke it to generate a token
+        // e.g. https://YOUR_TWILIO_FUNCTION.twil.io/voiceaccesstoken?identity=Alice&apiKeySecret=SECRET&appSid=AP_SID&apiKeySid=SK_API_KEY_SID
+        
         VoiceDialer.placeCall(identity: "ACME Support",
                               accessToken: "ACCESS_TOKEN",
-                              callParameters: ["to" : "some_number"],
+                              callParameters: ["orderID" : "12345",
+                                               "name": "Alice"],
                               delegate: self)
     }
 }
