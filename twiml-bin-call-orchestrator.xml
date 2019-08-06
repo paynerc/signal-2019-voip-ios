@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <!-- set callerId to a phone number you have verified to make calls to the PSTN -->
+  <Dial callerId="+15105551234" answerOnBridge="true">
+    <Client>
+      <Identity>agentbob</Identity>
+      <Parameter name="name" value="{{name}}"/>
+      <Parameter name="orderID" value="{{orderID}}"/>
+    </Client>
+  </Dial>
+</Response>
